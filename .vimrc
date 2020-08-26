@@ -42,10 +42,7 @@ set clipboard=unnamed,autoselect
 
 
 "----------Completions----------
-set completeopt=menuone
-for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
-  exec "imap <expr> " . k . " pumvisible() ? '" . k . "' : '" . k . "\<C-X>\<C-P>\<C-N>'"
-endfor
+set completeopt=menuone,preview
 
 autocmd filetype python nnoremap <F1> :w <bar> exec '!python3 '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F1> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
