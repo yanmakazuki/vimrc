@@ -1,21 +1,10 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-
-" !! write plugins here !!
-Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'justmao945/vim-clang'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+"----------Plugin----------
+"vim-airline/vim-airline
+"scrooloose/nerdtree
+"airblade/vim-gitgutter
+"tpope/vim-fugitive
+"davidhalter/jedi-vim
+"justmao945/vim-clang
 
 "----------Setting----------
 set fenc=utf-8
