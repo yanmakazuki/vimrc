@@ -1,4 +1,6 @@
 "----------Plugin----------
+"~/.vim/pack/plugins/start
+
 "davidhalter/jedi-vim
 "justmao945/vim-clang
 
